@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/*google fonts*/
+.redaction-50-regular {
+  font-family: "Redaction 50", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.redaction-50-bold {
+  font-family: "Redaction 50", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.redaction-50-regular-italic {
+  font-family: "Redaction 50", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: arial,Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+.contraste{
+    padding: 9px;
+    background-color: rgb(0, 0, 0);
+}
+a{
+    border-radius: 5px;
+    padding: 5px;
+    color: #E34C26;
+    background-color: #2965F1;
+}
+a:hover{
+    background-color: #E34C26;
+    color: #2965F1;
+    transition: background-color 0.5s , color 0.5s;
+}
+
+.contraste > h1{
+    font-variant: small-caps;
+    color: #E34C26;
+    font-size: 1.5em;
+}
+.contraste > p{
+    font-weight: 700;
+    font-family:"Redaction 50" ;
+    color:#2965F1;
+}
+.fim{
+    padding-bottom: 60px;
+}
+p{
+    padding: 5px;
+}
+h1{
+    padding: 9px;
+}
+.destaque{
+    font-variant: small-caps;
+}
+fieldset{
+    border-radius: 5px;
+    margin: 9px;
+}
+legend{
+    text-align: center;
+}
+.for{
+    margin: 7px;
+}
