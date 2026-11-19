@@ -1,9 +1,10 @@
 <!DOCTYPE html>
     <html lang="pt-br">
         <head>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chevron_right" />
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Redaction+50:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="styles/geral.css">
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,14 +12,32 @@
     </head>
         <body>
             <header class="contraste">
-                <p>Ja tem uma conta? <a href=""> criar </a></p>
+                <p>Ja tem uma conta? <a href=""> criar <span class="material-symbols-outlined">
+chevron_right
+</span> </a></p>
                 <h1>Crie sua conta gratuita!</h1>
-                <p class="fim">Explore um mar de possibilidades interações e aprendizagem com nossa cominidade de programadores!</p>
+                <p class="fim">Crie uma conta gratuita!</p>
             </header>
             <h1>Entre no <span class="destaque">ProgramerClub!</span></h1>
 
-           <fieldset>
-            <legend><span class="for">Criar</span></legend>
-           </fieldset>
+           <article class="elementos">
+               <fieldset>
+                <legend><span class="for">Criar</span></legend>
+                <form action="" method="post" autocomplete="on">
+                    <label for="email">
+                        <p>email</p>
+                        <input type="email" name="email" id="email" placeholder="digite seu e-mail!" required >
+                    </label>
+                    <label for="senha">
+                    <p>senha</p>
+                    <input type="password" name="senha" id="senha" required minlength="5" maxlength="19"placeholder="sua senha por favor" > 
+                    </label>
+                    <p>usuario</p>
+                    <p>regiao</p>
+                    <!--depois sobre receber atualizações por email de produtos e melhorias-->
+                    <input type="submit" value="enviar">
+                </form>
+               </fieldset>
+           </article>
         </body>
     </html>
