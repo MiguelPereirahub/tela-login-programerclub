@@ -56,6 +56,21 @@ a:hover{
     font-family:"nunito" ;
     color: #2965F1;
 }
+.logo{
+    top: 20%;
+    box-sizing: border-box;
+    width: 157px;
+    font-size: 3em;
+    transform: translate(-50%);
+    left: 50%;
+    vertical-align: middle;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    background-color: #E34C26;
+    color: white;
+    font-family: "nunito";
+}
 .fim{
     padding-bottom: 60px;
 }
@@ -70,6 +85,9 @@ h1{
     font-variant: small-caps;
 }
 fieldset{
+    justify-content: center;
+    display:flex;
+    padding-bottom: 5px;
     border-radius: 5px;
     margin: 9px;
     border: 2px solid  #E34C26;
@@ -78,6 +96,7 @@ legend{
     text-align: center;
 }
 .for{
+    text-align: center;
     font-weight: bolder;
     color:  #E34C26;
     margin: 7px;
@@ -93,10 +112,24 @@ form  {
     font-weight: bolder;
 }
 input{
+    margin: 5px;
+    width: 90vw;
     border-radius:15px;
     font-weight: bolder;
     padding: 5px;
     background-color:  #2965F1;
     border: 2px solid  #E34C26;
     color: #E34C26;
+}
+.check{
+    width: 25px;
+    height: 25px;
+}
+.opção-pos{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.enviar{
+    width: 90vw;
+    margin: 5px;
 }
