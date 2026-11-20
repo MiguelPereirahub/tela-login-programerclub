@@ -11,12 +11,25 @@
     display: flex;
     flex-flow: row nowrap;
 }
-    .cima,.baixo{
-    flex-flow: column nowrap;
+.cima,.baixo{
+    text-align:left;
+    width:95vw;
+    justify-content:center;	
     display:flex;
-    font-family: "nunito";
-    font-weight: bolder;
-    color: #E34C26;
+    flex-flow: row wrap;
+}
+#email{
+    width:90vw;
+}
+#senha{
+    width:90vw;
+}
+#usuario{
+    width:90vw;
+}
+#local{
+    width:90vw;
+}
 }
     input{  
     margin: 5px;

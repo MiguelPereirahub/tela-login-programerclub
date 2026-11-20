@@ -139,6 +139,7 @@ form  {
     color: #E34C26;
 }
 .cima,.baixo{
+    justify-content:center;	
     display:flex;
     flex-flow: row nowrap;
 }
@@ -170,3 +171,4 @@ input{
 .enviar{
     margin: 5px;
 }
+
