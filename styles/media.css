@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+
+/*pequena configuração para versao de celular*/
+@media screen and (max-width:460px) {
+    .opção{
+    flex:none;
+    }
+    .opção-pos{
+    justify-content: flex-start;
+    display: flex;
+    flex-flow: row nowrap;
+}
+    .cima,.baixo{
+    flex-flow: column nowrap;
+    display:flex;
+    font-family: "nunito";
+    font-weight: bolder;
+    color: #E34C26;
+}
+    input{  
+    margin: 5px;
+    border-radius:15px;
+    font-weight: bolder;
+    padding: 5px;
+    background-color: #000000 ;/*#2965F1*/
+    border: 2px solid  #E34C26;
+    color: #E34C26;
+}
+}
+@media  screen and (min-width:460px) and (max-width:1011px) {
+    .cima{
+    }
+    .baixo{
+    }
+}

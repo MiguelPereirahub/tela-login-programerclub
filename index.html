@@ -5,7 +5,8 @@
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-            <link rel="stylesheet" href="styles/geral.css">
+            <link rel="stylesheet" href="styles/geral.css" media="all">
+            <link rel="stylesheet" href="styles/media.css" media="screen">
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Login</title>
@@ -17,7 +18,11 @@
                 </span> </a></p>
                 <h1>Crie sua conta gratuita!</h1>
                 <p class="fim">Crie uma conta gratuita!</p>
-                <div class="logo"><h1>&lt;/&gt;</h1></div>
+                <div class="logos">
+                    <div class="logo-css"></div>
+                    <div class="logo"></div>
+                    <div class="logo-js"></div>
+                </div>
             </header>
             <h1>Entre no <span class="destaque">ProgramerClub!</span></h1>
 
@@ -25,57 +30,62 @@
                <fieldset>
                 <legend><span class="for">Criar</span></legend>
                 <form action="" method="post" autocomplete="on">
-                    <label for="email">
-                        <p>email</p>
-                        <input type="email" name="email" id="email" placeholder="digite seu e-mail!" required >
-                    </label>
-                    <label for="senha">
-                    <p>senha</p>
-                    <input type="password" name="senha" id="senha" required minlength="5" maxlength="19"placeholder="sua senha por favor" > 
-                    </label>
-                    <label for="usuario">
-                        <p>usuario</p>
-                    <input type="text" name="usuario" id="usuario" required minlength="5" maxlength="13" placeholder="insira um nome de usuario">
-                    </label>
-                    <label for="local">
-                        <p>regiões brasileiras</p>
-                        <input type="text" name="local" id="local" list="lista" placeholder="regiões">
-                        <datalist id="lista">
-                        <select name="estado" id="estado">
-                        <option value="acre">Acre</option>
-                        <option value="alagoas">Alagoas</option>
-                        <option value="amapa">Amapá</option>
-                        <option value="amazonas">Amazonas</option>
-                        <option value="bahia">Bahia</option>
-                        <option value="ceara">Ceará</option>
-                        <option value="distrito federal">Distrito Federal</option>
-                        <option value="espirito santo">Espírito Santo</option>
-                        <option value="goias">Goiás</option>
-                        <option value="maranhao">Maranhão</option>
-                        <option value="mato grosso">Mato Grosso</option>
-                        <option value="mato grosso do sul">Mato Grosso do Sul</option>
-                        <option value="minas gerais">Minas Gerais</option>
-                        <option value="para">Pará</option>
-                        <option value="paraiba">Paraíba</option>
-                        <option value="parana">Paraná</option>
-                        <option value="pernambuco">Pernambuco</option>
-                        <option value="piaui">Piauí</option>
-                        <option value="rio de janeiro">Rio de Janeiro</option>
-                        <option value="rio grande do norte">Rio Grande do Norte</option>
-                        <option value="rio grande do sul">Rio Grande do Sul</option>
-                        <option value="rondonia">Rondônia</option>
-                        <option value="roraima">Roraima</option>
-                        <option value="santa catarina">Santa Catarina</option>
-                        <option value="sao paulo">São Paulo</option>
-                        <option value="sergipe">Sergipe</option>
-                        <option value="tocantins">Tocantins</option>
-                        </select>
-                        </datalist>
-                    </label>
+                    <div class="cima">
+                        <label for="email">
+                            <p>email</p>
+                            <input type="email" name="email" id="email" placeholder="digite seu e-mail!" required >
+                        </label>
+                        <label for="senha">
+                        <p>senha</p>
+                        <input type="password" name="senha" id="senha" required minlength="5" maxlength="19"placeholder="sua senha por favor" >
+                        </label>
+                    </div>
+                    <div class="baixo">
+                        <label for="usuario">
+                            <p>usuario</p>
+                        <input type="text" name="usuario" id="usuario" required minlength="5" maxlength="13" placeholder="insira um nome de usuario">
+                        </label>
+                        <label for="local">
+                            <p>regiões brasileiras</p>
+                            <input type="text" name="local" id="local" list="lista" placeholder="regiões">
+                            <datalist id="lista">
+                            <select name="estado" id="estado">
+                            <option value="acre">Acre</option>
+                            <option value="alagoas">Alagoas</option>
+                            <option value="amapa">Amapá</option>
+                            <option value="amazonas">Amazonas</option>
+                            <option value="bahia">Bahia</option>
+                            <option value="ceara">Ceará</option>
+                            <option value="distrito federal">Distrito Federal</option>
+                            <option value="espirito santo">Espírito Santo</option>
+                            <option value="goias">Goiás</option>
+                            <option value="maranhao">Maranhão</option>
+                            <option value="mato grosso">Mato Grosso</option>
+                            <option value="mato grosso do sul">Mato Grosso do Sul</option>
+                            <option value="minas gerais">Minas Gerais</option>
+                            <option value="para">Pará</option>
+                            <option value="paraiba">Paraíba</option>
+                            <option value="parana">Paraná</option>
+                            <option value="pernambuco">Pernambuco</option>
+                            <option value="piaui">Piauí</option>
+                            <option value="rio de janeiro">Rio de Janeiro</option>
+                            <option value="rio grande do norte">Rio Grande do Norte</option>
+                            <option value="rio grande do sul">Rio Grande do Sul</option>
+                            <option value="rondonia">Rondônia</option>
+                            <option value="roraima">Roraima</option>
+                            <option value="santa catarina">Santa Catarina</option>
+                            <option value="sao paulo">São Paulo</option>
+                            <option value="sergipe">Sergipe</option>
+                            <option value="tocantins">Tocantins</option>
+                            </select>
+                            </datalist>
+                        </label>
+                    </div>
                     <label for="opção">
                         <div class="opção-pos">
-                            <input type="checkbox" name="opção" id="opção" class="check">
-                            <p>receber atualizações mensagems e recomendalçoes por email?</p>
+                            <input type="checkbox" name="opção" id="opção" class="check">          
+                            <p class="selecionar">receber atualizações mensagems e recomendaçoes por email?</p>
+
                         </div>
                     </label>
                     <!--depois sobre receber atualizações por email de produtos e melhorias-->
