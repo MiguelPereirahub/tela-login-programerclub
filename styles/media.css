@@ -2,7 +2,7 @@
 
 
 /*pequena configuração para versao de celular*/
-@media screen and (max-width:460px) {
+@media  screen and (min-width:1px) and (max-width:454px){
     .opção{
     flex:none;
     }
@@ -13,7 +13,6 @@
 }
 .cima,.baixo{
     text-align:left;
-    width:95vw;
     justify-content:center;	
     display:flex;
     flex-flow: row wrap;
@@ -40,10 +39,26 @@
     border: 2px solid  #E34C26;
     color: #E34C26;
 }
-}
-@media  screen and (min-width:460px) and (max-width:1011px) {
-    .cima{
+
+@media  screen and  (min-width:916px) {
+    .pai{
+        display: flex;
+        flex-flow: row nowrap;
     }
-    .baixo{
+    .direita{
+        border-left: 6px solid #E34C26;
+        width: 50vw;
+    }
+    .esquerda{
+        background-color: black;
+        background-position: center left;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("https://images.pexels.com/photos/34804020/pexels-photo-34804020.jpeg");
+        display: block;
+        width: 50vw;
+    }
+    .destaque{
+        font-size: 1.5em;
     }
 }
